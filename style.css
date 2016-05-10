@@ -1,0 +1,33 @@
+.canvas {
+  height: 160px;
+  margin: 20px 0;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.canvas > div {
+  background-color: white;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  bottom: 0;
+  font-size: 20px;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  width: 60px;
+}
+
+.selector {
+  animation-name: blink;
+  animation-direction: alternate;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1.5;
+}
+
+@keyframes blink {
+  50% { border-color: red; }
+}
